@@ -5,6 +5,10 @@ Just after removing the semihosting options it started to work.
 
 Configuring to enter the interrupt each 1ms (according with table in [target TIM3 PWM](https://github.com/Rafaelatff/target-TIM3-PWM)). Clock and code condigured by STM32CubeMX.
 
+NOTE: TIM16 is connected to APB2 Timer clock, using 100 MHz as clock.
+
+![image](https://user-images.githubusercontent.com/58916022/227262115-92cc1f5d-a5aa-42bc-8909-2e3c3f2a51fd.png)
+
 ```c
 void MX_TIM16_Init(void)
 {
